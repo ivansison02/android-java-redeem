@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_snack"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:weightSum="1"
+    android:visibility="invisible"
+    tools:visibility="visible"
+    android:orientation="horizontal"
+    android:background="@android:color/holo_red_light">
+
+    <TextView
+        android:id="@+id/txt_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/btn_retry"
+        android:layout_marginStart="@dimen/view_margin_hor"
+        tools:text="Unable to establish connection to server."
+        android:textSize="18sp"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btn_retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/view_margin_hor"
+        android:layout_marginEnd="@dimen/view_margin_hor"
+        android:background="@drawable/field_white_border"
+        android:text="@string/text_retry"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

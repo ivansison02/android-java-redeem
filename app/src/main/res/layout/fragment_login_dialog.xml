@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:minWidth="400dp"
+    android:minHeight="330dp"
+    tools:context=".views.dialogs.LoginDialog">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/view_margin_ver"
+        android:text="@string/title_fragment_auth"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/field_layout_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_hor"
+        android:layout_marginStart="@dimen/view_margin_hor"
+        android:layout_marginEnd="@dimen/view_margin_hor"
+        app:errorEnabled="true">
+
+        <EditText
+            android:id="@+id/field_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_username"
+            android:inputType="textPersonName"
+            android:paddingBottom="@dimen/view_margin_ver"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/field_layout_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_ver_s"
+        android:layout_marginStart="@dimen/view_margin_hor"
+        android:layout_marginEnd="@dimen/view_margin_hor"
+        android:layout_gravity="center_horizontal"
+        app:hintAnimationEnabled="true"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@android:color/darker_gray"
+        app:errorEnabled="true">
+
+        <EditText
+            android:id="@+id/field_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_password"
+            android:inputType="textPassword"
+            android:paddingBottom="@dimen/view_margin_ver"
+            android:longClickable="false"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_ver"
+        android:layout_marginBottom="@dimen/view_margin_ver"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".6"
+            android:background="@drawable/field_primary"
+            android:layout_marginStart="@dimen/view_margin_hor"
+            android:layout_marginEnd="@dimen/view_margin_hor"
+            android:text="@string/text_login"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:background="@drawable/field_primary_border"
+            android:layout_marginEnd="@dimen/view_margin_hor"
+            android:text="@string/text_cancel"
+            android:textColor="@color/colorPrimary"/>
+    </LinearLayout>
+</LinearLayout>

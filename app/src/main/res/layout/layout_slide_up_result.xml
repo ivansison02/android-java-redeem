@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.ivan.sison.redeem.views.objects.LockableScrollView
+        android:id="@+id/scroll_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_margin_ver"
+                android:layout_marginBottom="@dimen/view_margin_ver"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_scanned_result"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_result"
+                style="@style/ScannedResultTitle"/>
+
+            <EditText
+                android:id="@+id/field_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Senior Ticket Accepted"
+                tools:textColor="@color/colorTicketTypeDiscount"
+                android:textSize="22sp"
+                style="@style/ScannedResultField"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_ticket_id"
+                style="@style/ScannedResultTitle"/>
+
+            <EditText
+                android:id="@+id/field_ticket_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="81230"
+                style="@style/ScannedResultField"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_event_title"
+                style="@style/ScannedResultTitle" />
+
+            <EditText
+                android:id="@+id/field_event_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="SEAGAMES OPENING"
+                style="@style/ScannedResultField"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_event_code"
+                style="@style/ScannedResultTitle" />
+
+            <EditText
+                android:id="@+id/field_event_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="SGOPENING"
+                style="@style/ScannedResultField"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_customer_name"
+                style="@style/ScannedResultTitle"/>
+
+            <EditText
+                android:id="@+id/field_customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ScannedResultField"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_transaction_id"
+                style="@style/ScannedResultTitle"/>
+
+            <EditText
+                android:id="@+id/field_transaction_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ScannedResultField" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_event_date"
+                style="@style/ScannedResultTitle"/>
+
+            <EditText
+                android:id="@+id/field_event_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ScannedResultField"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_transaction_date"
+                style="@style/ScannedResultTitle" />
+
+            <EditText
+                android:id="@+id/field_transaction_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ScannedResultField"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_section"
+                style="@style/ScannedResultTitle"/>
+
+            <EditText
+                android:id="@+id/field_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ScannedResultField"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_row_seat"
+                style="@style/ScannedResultTitle" />
+
+            <EditText
+                android:id="@+id/field_row_seat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ScannedResultField"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_ticket_type"
+                style="@style/ScannedResultTitle"/>
+
+            <EditText
+                android:id="@+id/field_ticket_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ScannedResultField"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_price"
+                style="@style/ScannedResultTitle"/>
+
+            <EditText
+                android:id="@+id/field_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ScannedResultField" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_branch"
+                style="@style/ScannedResultTitle" />
+
+            <EditText
+                android:id="@+id/field_branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ScannedResultField" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_status"
+                style="@style/ScannedResultTitle" />
+
+            <EditText
+                android:id="@+id/field_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ScannedResultField" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_used_date"
+                style="@style/ScannedResultTitle"/>
+
+            <EditText
+                android:id="@+id/field_used_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ScannedResultField" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_last_accessed"
+                style="@style/ScannedResultTitle"/>
+
+            <EditText
+                android:id="@+id/field_last_accessed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ScannedResultField"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/text_remark"
+                style="@style/ScannedResultTitle"/>
+
+            <EditText
+                android:id="@+id/field_remark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ScannedResultField" />
+        </LinearLayout>
+    </com.ivan.sison.redeem.views.objects.LockableScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_down"
+        android:tooltipText="@string/text_slide_down"
+        android:layout_margin="16dp" />
+</RelativeLayout>

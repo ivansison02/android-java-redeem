@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#AD1313</color>
+    <color name="colorPrimaryDark">#9A2F2F</color>
+    <color name="colorAccent">#6F2C2C</color>
+
+    <color name="colorSplashBg">#7C0A0A</color>
+    <color name="colorAlertBg">#5B1616</color>
+    <color name="colorTextEventTitle">#757575</color>
+
+    <color name="colorTicketTypeDiscount">#CFCF04</color>
+</resources>

@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="view_margin_hor">24dp</dimen>
+    <dimen name="view_margin_hor_s">16dp</dimen>
+    <dimen name="view_margin_ver">16dp</dimen>
+    <dimen name="view_margin_ver_s">8dp</dimen>
+    <dimen name="logo_margin_ver">36dp</dimen>
+</resources>
